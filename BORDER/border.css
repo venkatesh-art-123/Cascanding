@@ -20,6 +20,7 @@
 }
 
 #solid {
+    /* border: 2px solid purple; */
     border : solid purple 5px;
 }
 
