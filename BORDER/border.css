@@ -1,0 +1,40 @@
+.dashed {
+    border-style : dashed;
+    border-width: 5px;
+    border-color : blue;
+    border-radius : 10px;
+}
+
+.dotted {
+    border-style : dotted;
+    border-width : 13px;
+    border-color : red;
+    /* border-radius : 30px; */
+}
+
+#double {
+    border-style: double;
+    border-width : 10px;
+    border-color : greenyellow;
+    border-radius : 3px;
+}
+
+#solid {
+    /* border: 2px solid purple; */
+    border : solid purple 5px;
+}
+
+
+.styleborder {
+    border-top-style: dashed;
+    border-right-style: double;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+}
+
+.shortand {
+    border-style: dashed solid dotted double;
+    border-style: dashed solid dotted;
+    border-style: dashed solid;
+    border-style: dotted;
+}
