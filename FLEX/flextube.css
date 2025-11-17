@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: #03A9F4;
+    height: 650px;
+     display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.flex-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+}
+
+
+.flex-items {
+    background-color: orange;
+    margin: 8px;
+    padding: 9px;
+    width: 83px;
+    border-radius: 6px;
+}
