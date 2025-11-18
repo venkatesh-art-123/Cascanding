@@ -11,4 +11,30 @@
     border: 2px solid black;
     padding: 14px;
     gap: 40px;
+    position: fixed;
+}
+
+.img-header-main {
+    background-image: url("https://www.w3schools.com/w3images/parallax1.jpg");
+    background-repeat: no-repeat;
+    background-position: 10%;
+    background-size: cover;
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.website-title {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    letter-spacing: 10px;
+    padding: 15px;
+    text-align: center;
+    display: inline;
+    /* font-family: serif;
+    font-size: 23px; */
 }
