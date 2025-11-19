@@ -4,7 +4,14 @@
     list-style-type: none;
 }
 
-.weblogo {}
+body h1 h2 h3 h4 h5 h6 {
+    font-family: "Lato", sans-serif;
+}
+
+.weblogo {
+    border: 2px solid red;
+    background-color: blue;
+}
 
 .logoheader {
     display: flex;
@@ -15,10 +22,10 @@
 }
 
 .img-header-main {
-    background-image: url("https://www.w3schools.com/w3images/parallax1.jpg");
+    background-image: url("../ASSETS/parallax1.jpeg");
     background-repeat: no-repeat;
-    background-position: 10%;
     background-size: cover;
+    background-position: left;
     height: 400px;
     width: 100vw;
     display: flex;
@@ -31,10 +38,86 @@
     border: 2px solid black;
     background-color: black;
     color: white;
-    letter-spacing: 10px;
-    padding: 15px;
+    letter-spacing: 6px;
+    padding: 9px;
     text-align: center;
     display: inline;
-    /* font-family: serif;
-    font-size: 23px; */
+}
+
+
+.about-main {
+    border: 2px solid blue;
+    margin: 0px 310px;
+    padding: 20px;
+}
+
+.about-content {
+    padding: 10px;
+}
+
+.about-content h3 {
+    font-family: "Lato", sans-serif;
+    color: #222121d9;
+    margin: 14px 0px;
+    text-align: center;
+}
+
+.about-content h5 {
+    font-style: italic;
+    color: #6c5f5f;
+    margin: 18px 0px;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 13px;
+    color: #817676;
+    margin: 18px 0px;
+}
+
+.about-sub {
+    display: flex;
+    gap : 20px;     
+}
+
+.container h4 {
+    text-align: center;
+    margin: 25px 0px;
+}
+
+.about-img {
+    border: 2px solid blue;
+    background-image: url(../ASSETS/avatar_hat.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 219px;
+    width: 327px;
+    background-size: contain;
+}
+
+.about-sub p {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+}
+
+
+.about-perc {
+        border: 2px solid green;
+    padding: 14px 0px;
+}
+
+.about-perc .rea {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.web-perc h4 {
+        letter-spacing: 7px;
+    padding: 10px;
+}
+.web-box {
+    border: 2px solid black;
+    height: 21px;
+    width: 100%;
+    text-align: center;
 }
