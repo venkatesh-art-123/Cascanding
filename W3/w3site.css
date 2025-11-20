@@ -303,3 +303,41 @@ background-color: #616161;
     padding: 8px 0px;
     /* z-index : 1; */
 }
+
+
+.main-wor {
+    border: 1px solid black;
+    margin: 0px 310px;
+    padding: 30px 7px;
+}
+
+.sub-feed {
+    text-align: center;
+    border: 2px solid red;
+    /* margin: 10px; */
+    padding: 10px;
+}
+
+.sub-feed h2 {
+    margin: 14px 0px;
+}
+
+.sub-feed h5 {
+    margin: 18px 0px;
+}
+
+
+.sub-add {
+    
+}
+
+.sub-img {
+    height: 159px;
+    width: 284px;
+}
+
+.sub-img img {
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+}
