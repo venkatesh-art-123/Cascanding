@@ -50,7 +50,7 @@ body h1 h2 h3 h4 h5 h6 {
 .about-main {
     /* border: 2px solid blue; */
     margin: 0px 310px;
-    padding: 20px;
+    padding: 52px 11px;
 }
 
 .about-content {
@@ -215,19 +215,91 @@ background-color: #616161;
 
 .porto-back .back-image {
     background-image: url(../ASSETS/parallax2.jpeg);
-        background-position: 72px;
-        height: 322px;
-    display: flex
-;
+    background-position: 72px;
+    height: 322px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
 .back-image .back-image-tit {
-   letter-spacing: 7px;
+    letter-spacing: 7px;
     color: white;
     font-family: "Lato", sans-serif;
     font-size: 13px;
 }
 
+.images-main {
+    /* border: 1px solid black; */
+    margin: 0px 310px;
+    padding: 10px 2px;
+}
+
+.images-main .sent {
+    text-align: center;
+}
+
+.sent h2 {
+    margin: 10px 0px;
+}
+
+.sent h5 {
+    margin: 17px 0px;
+}
+
+
+.img-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 12px;
+    justify-content: space-around;
+}
+
+.img-item img {
+    /* DOUT */
+    height: 149px;
+    width: 162px;
+}
+
+
+.load {
+    /* border: 2px solid blue; */
+    margin: 31px 0px;
+    padding: 12px 0px;
+    text-align: center;
+}
+
+
+.load .btn {
+    padding: 12px;
+    border: 2px solid #eae1e1;
+    background-color: #eae1e1;
+    color: black;
+    font-size: 12px;
+}
+
+
+.cam-img {
+    background-image: url(../ASSETS/parallax3.jpeg);
+    height: 324px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index : 3; */
+}
+
+
+.cam-img h2 {
+    letter-spacing: 6px;
+    background-color: #0000ff94;
+    font-size: 29px;
+    color: white;
+    padding: 8px 0px;
+    /* z-index : 1; */
+}
