@@ -220,6 +220,8 @@ background-color: #616161;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -405,16 +407,179 @@ background-color: #616161;
 
 .footer-sub {
     text-align: center;
-    text-align: center;
     padding: 29px 5px;
 }
 
 .footer-sub .foot-btn {
-        padding: 10px;
+    padding: 10px;
 }
 
 
 .footer-sub h5 {
     color: white;
     margin: 20px 5px;
+}
+
+
+@media screen and (max-width : 992px) {
+    .about-main {
+        margin: 0px 15px;
+        padding: 52px 0px;
+    }
+
+    .about-content h3 {
+        font-size: 26px;
+        margin: 18px 0px;
+    }
+
+    .about-content h5 {
+        font-size: 15px;
+        margin: 22px 0px;
+    }
+
+    .about-content p {
+        font-size: 19px;
+    }
+
+
+    .about-sub {
+        gap: 43px;
+        margin: 0px 29px;
+    }
+
+    .about-img {
+        height: 283px;
+        width: 425px;
+    }
+
+    .about-sub p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .about-perc .rea {
+        font-size: 20px;
+    }
+
+    .web-box .lef-pho {
+        padding: 8px 0px;
+    }
+
+    .web-box .rig-pho {
+        padding: 17px 0px;
+    }
+
+    .web-box .lef-des {
+        padding: 8px 0px;
+    }
+
+    .web-box .rig-des {
+        padding: 17px 0px;
+    }
+
+    .web-box .lef-shop {
+        padding: 8px 0px;
+    }
+
+    .web-box .rig-shop {
+        padding: 17px 0px;
+    }
+
+    .portof-head .tit {
+        font-size: 18px;
+    }
+
+
+    .porto-back .back-image {
+        background-position: 0px -173px;
+        border: 2px solid blue;
+        height: 390px;
+    }
+
+    .back-image-tit h1 {
+        position: relative;
+        /* DOUT without relative*/
+        bottom: 34px;
+        text-align: center;
+        font-size: 38px;
+    }
+
+
+    .images-main {
+        margin: 0px 20px;
+        padding: 64px 2px;
+    }
+
+    .sent h2 {
+        margin: 25px 0px;
+    }
+
+    .sent h5 {
+        margin: 17px 0px;
+        line-height: 1.5;
+        font-size: 17px;
+    }
+
+    .img-item img {
+        height: 162px;
+        width: 216px;
+        margin: 5px 0px;
+    }
+
+    .load .btn {
+        padding: 16px;
+        font-size: 15px;
+    }
+
+    .sub-feed h2 {
+        margin: 16px 0px;
+    }
+
+    .sub-feed h5 {
+        margin: 21px 0px;
+        color: #6c5f5f;
+        font-size: 17px;
+        font-style: italic;
+    }
+
+    .main-wor {
+        margin: 0px 23px;
+        padding: 50px 7px;
+    }
+
+    .sub-addr ul li {
+        margin: 7px 2px;
+        font-size: 20px;
+    }
+
+    .sub-add p {
+        font-size: 17px;
+    }
+
+    .box .name {
+        padding: 12px 7px;
+        width: 49%;
+    }
+
+    .box .em {
+        padding: 12px 7px;
+        width: 49%;
+    }
+
+    .box .mes {
+        padding: 12px 6px;
+    }
+
+    .box .btn {
+        left: 487px;
+    }
+
+    .footer-sub .foot-btn {
+        padding: 16px 36px;
+    }
+
+    .footer-sub h5 {
+        margin: 24px 5px;
+        font-size: 15px;
+    }
 }
