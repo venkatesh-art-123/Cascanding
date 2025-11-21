@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <style>
+        .main {
+            display: flex;
+            gap: 27px;
+        }
+
+        .box {
+            height: 73px;
+            width: 88px;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .pur {
+            background-color: purple;
+        }
+
+        .gre {
+            background-color: green;
+        }
+
+        @media screen and (max-width : 600px) {
+            .main {
+                display: flex;
+                gap: 27px;
+                flex-wrap: wrap;
+            }
+
+            .box {
+                height: 166px;
+                width: 488px;
+            }
+        }
+
+        @media screen and (max-width : 400px) {
+            .main {
+                display: flex;
+                gap: 27px;
+                flex-wrap: wrap;
+            }
+
+            .box {
+                height: 183px;
+                width: 214px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box blue"></div>
+        <div class="box pur"></div>
+        <div class="box gre"></div>
+        <div class="box red"></div>
+    </div>
+</body>
+
+</html>

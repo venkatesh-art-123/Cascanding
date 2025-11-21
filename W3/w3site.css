@@ -306,14 +306,14 @@ background-color: #616161;
 
 
 .main-wor {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0px 310px;
     padding: 30px 7px;
 }
 
 .sub-feed {
     text-align: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* margin: 10px; */
     padding: 10px;
 }
@@ -323,21 +323,98 @@ background-color: #616161;
 }
 
 .sub-feed h5 {
-    margin: 18px 0px;
+    margin: 14px 0px;
 }
 
 
 .sub-add {
-    
+    display: flex;
+    gap: 33px;
+}
+
+.sub-addr {
+    margin: 9px 0px;
+    padding: 10px 15px;
+}
+
+.sub-addr ul li {
+    margin: 7px 2px;
 }
 
 .sub-img {
     height: 159px;
-    width: 284px;
+    width: 296px;
+    padding: 8px 0px;
+    /* border-radius: 19px; */
 }
 
 .sub-img img {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 100%;
     height: 100%;
+    border-radius: 4px;
+}
+
+.sub-add p {
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+
+.sub-add .box {
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 13px 3px;
+}
+
+.box .name {
+    padding: 8px 7px;
+    width: 48%;
+    margin: 5px 2px;
+}
+
+.box .em {
+    padding: 8px 7px;
+    width: 49%;
+    margin: 5px 2px;
+}
+
+.box .mes {
+    padding: 8px 6px;
+    width: 100%;
+    margin: 10px 3px;
+}
+
+
+.box .btn {
+    padding: 9px 7px;
+    margin: 5px 2px;
+    background-color: black;
+    color: white;
+    position: relative;
+    left: 338px;
+    font-size: 13px;
+}
+
+
+.footer-main {
+    background-color: black;
+    /* border: 2px solid blue; */
+    margin: 5px 2px;
+    padding: 5px 16px;
+}
+
+.footer-sub {
+    text-align: center;
+    text-align: center;
+    padding: 29px 5px;
+}
+
+.footer-sub .foot-btn {
+        padding: 10px;
+}
+
+
+.footer-sub h5 {
+    color: white;
+    margin: 20px 5px;
 }
