@@ -14,7 +14,6 @@ body h1 h2 h3 h4 h5 h6 {
     background-color: blue;
     /* DOUT */
     position: relative;
-    padding: 20px;
 }
 
 .logoheader {
@@ -208,11 +207,10 @@ body h1 h2 h3 h4 h5 h6 {
     background-color: #f1f1f1;
 }
 
-.portof {
-    background-color: #616161;
-}
+
 
 .portof-head {
+    background-color: #616161;
     display: flex;
     justify-content: space-evenly;
     color: white;
@@ -237,7 +235,7 @@ background-color: #616161;
 
 .porto-back .back-image {
     background-image: url(../ASSETS/parallax2.jpeg);
-    background-position: 72px;
+    /* background-position: 72px; */
     height: 322px;
     display: flex;
     justify-content: center;
@@ -423,7 +421,7 @@ background-color: #616161;
 .footer-main {
     background-color: black;
     /* border: 2px solid blue; */
-    margin: 5px 2px;
+    /* margin: 5px 2px; */
     padding: 5px 16px;
 }
 
@@ -442,6 +440,25 @@ background-color: #616161;
     margin: 20px 5px;
 }
 
+.main-div {
+    padding: 20px 0px;
+    margin: 0px 177px;
+    border: 2px solid green;
+}
+
+.main-feed {
+    text-align: center;
+}
+
+.main-feed h1 {
+margin: 14px 0px
+}
+
+.main-feed h4 {
+margin: 14px 0px
+}
+
+.porto-back {}
 
 @media screen and (max-width : 992px) {
     .about-main {
@@ -635,10 +652,17 @@ background-color: #616161;
         width: 10px; DOUT
     } */
 
-.logoheader {
-    display : flex;
-}
-    .logoheader li {
-        font-size: 10px;
+    .logoheader {
+        display: flex;
+        border: 1px solid red;
+        flex-direction: column;
     }
+
+    .logoheader li {
+        font-size: 38px;
+    }
+
+    .img-header-main {}
+
+    .website-title {}
 }
