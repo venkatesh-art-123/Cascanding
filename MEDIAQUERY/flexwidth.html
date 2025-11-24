@@ -1,7 +1,9 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .main {
             display: flex;
@@ -29,18 +31,8 @@
             background-color: green;
         }
 
-        body {
-            background-color: green;
-        }
-
-
-
-        @media screen and (max-width : 600px) {
-            body {
-                background-color: red;
-            }
-
-            /* .main {
+        @media only screen and (max-width : 600px) {
+            .main {
                 display: flex;
                 gap: 27px;
                 flex-wrap: wrap;
@@ -49,17 +41,10 @@
             .box {
                 height: 166px;
                 width: 488px;
-            } */
+            } 
         }
 
-        /* @media screen and (max-width : 400px) {
-            body {
-                background-color: blue;
-            }
-
-        } */
-
-        /* @media screen and (max-width : 400px) {
+        @media only screen and (max-width : 400px) {
             .main {
                 display: flex;
                 gap: 27px;
@@ -70,7 +55,7 @@
                 height: 183px;
                 width: 214px;
             }
-        } */
+        } 
     </style>
 </head>
 
