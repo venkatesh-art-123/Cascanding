@@ -12,6 +12,8 @@ body h1 h2 h3 h4 h5 h6 {
 .weblogo {
     border: 2px solid red;
     background-color: blue;
+    /* DOUT */
+    position: relative;
 }
 
 .logoheader {
@@ -23,6 +25,25 @@ body h1 h2 h3 h4 h5 h6 {
     position: fixed;
 }
 
+/* .menubar-main {
+    position: relative;
+    left: 96.5%;
+}
+
+.menubar {
+    display: flex;
+    border: 2px solid red;
+    height: 49px;
+    width: 51px;
+    flex-direction: column;
+    gap : 5px;
+}
+
+.menubar .menu-item {
+    height: 20%;
+    background-color: black;
+    margin: 2px 7px;
+} */
 .img-header-main {
     background-image: url("../ASSETS/parallax1.jpeg");
     background-repeat: no-repeat;
@@ -581,5 +602,42 @@ background-color: #616161;
     .footer-sub h5 {
         margin: 24px 5px;
         font-size: 15px;
+    }
+}
+
+
+
+@media screen and (max-width : 320px) {
+    /* .menubar-main {
+        position: relative;
+        left: 96.5%;
+    }
+
+    .menubar {
+        display: flex;
+        border: 2px solid red;
+        height: 49px;
+        width: 51px;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menubar .menu-item {
+        height: 20%;
+        background-color: black;
+        margin: 2px 7px;
+    } */
+
+    /* .menubar {
+        border: 2px solid green;
+        height: 10px;
+        width: 10px; DOUT
+    } */
+
+.logoheader {
+    display : flex;
+}
+    .logoheader li {
+        font-size: 10px;
     }
 }
