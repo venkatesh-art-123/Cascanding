@@ -441,9 +441,9 @@ background-color: #616161;
 }
 
 .main-div {
-    padding: 20px 0px;
-    margin: 0px 177px;
-    border: 2px solid green;
+    padding: 50px 0px;
+    margin: 0px 210px;
+    /* border: 2px solid green; */
 }
 
 .main-feed {
@@ -456,6 +456,78 @@ margin: 14px 0px
 
 .main-feed h4 {
 margin: 14px 0px
+}
+
+.main-addr {
+    /* add  */
+        margin: 24px 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.sub-image {
+        margin: 12px 0px;
+        width: 40%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+.sub-image img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.sub-address {
+    /* border: 2px solid green; */
+     margin: 10px 0px;
+    width: 100%;
+    padding: 13px 0px;
+}
+
+.sub-address ul li {
+    font-size: 20px;
+    color: #000000c7;
+    margin: 8px 6px;
+}
+
+.sub-address h4 {
+    margin-top: 17px;
+    margin-bottom: 14px;
+    margin-left: 6px;
+}
+
+.addr-inp {
+display: flex;
+    flex-wrap: wrap;
+}
+
+.addr-inp .comm {
+      width: 48%;
+padding: 10px 8px;
+    margin: 3px 6px;
+}
+
+
+.addr-inp .mes {
+    width: 98%;
+    padding: 10px 8px;
+    margin: 5px 6px;
+    
+}
+
+
+.send-btn{
+width: 100%;
+    /* border: 1px solid blue; */
+    padding: 11px 0px;
+    text-align: end;
+}
+
+.send-btn button {
+        margin: 0px 7px;
+    padding: 11px;
+    background-color: black;
+    color: white;
 }
 
 .porto-back {}
