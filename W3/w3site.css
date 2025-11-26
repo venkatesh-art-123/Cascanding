@@ -57,7 +57,7 @@ body h1 h2 h3 h4 h5 h6 {
 }
 
 
-.website-title {
+.website-title .heig2 {
     border: 2px solid black;
     background-color: black;
     color: white;
@@ -736,21 +736,18 @@ background-color: #616161;
         width: 10px; DOUT
     } */
 
-.logoheader {
-    display: flex;
-    border: 2px solid black;
-    padding: 14px;
-    gap: 40px;
-    width: 100%;
-    position: fixed;
-}
+    .logoheader {
+        display: flex;
+        border: 2px solid black;
+        padding: 14px;
+        gap: 40px;
+        width: 100%;
+        /* position: fixed; */
+    }
+
     .logoheader li {
         font-size: 38px;
     }
-
-    .img-header-main {}
-
-    .website-title {}
 
     .about-sub {
         flex-wrap: wrap;
@@ -766,11 +763,31 @@ background-color: #616161;
     .about-sub p {
         display: none;
     }
-.about-sub .container {
-    width : 100%
-}
-       .about-img {
+
+    .about-sub .container {
+        width: 100%
+    }
+
+    .about-img {
         /* height: 283px; */
         width: 100%;
+    }
+
+    .portof-head {
+        flex-direction: column;
+    }
+
+    .website-title .heig2 {
+        display: none
+    }
+
+    .website-title .heig3 {
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+        letter-spacing: 6px;
+        padding: 9px;
+        text-align: center;
+        display: inline;
     }
 }
