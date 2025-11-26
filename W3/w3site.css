@@ -437,7 +437,8 @@ background-color: #616161;
 
 .footer-sub h5 {
     color: white;
-    margin: 20px 5px;;
+    margin: 20px 5px;
+    ;
 }
 
 .main-div {
@@ -447,29 +448,29 @@ background-color: #616161;
 }
 
 .main-feed {
-        border: 2px solid blue;
+    border: 2px solid blue;
     text-align: center;
 }
 
 .main-feed h1 {
-margin: 14px 0px
+    margin: 14px 0px
 }
 
 .main-feed h4 {
-margin: 14px 0px
+    margin: 14px 0px
 }
 
 .main-addr {
     /* add  */
     border: 2px solid blue;
-        margin: 24px 0px;
+    margin: 24px 0px;
     display: flex;
     gap: 20px;
 }
 
 .sub-image {
-        margin: 12px 0px;
-        width: 40%;
+    margin: 12px 0px;
+    width: 40%;
     height: 100%;
     border: 2px solid red;
 }
@@ -481,7 +482,7 @@ margin: 14px 0px
 
 .sub-address {
     border: 2px solid green;
-     margin: 10px 0px;
+    margin: 10px 0px;
     width: 100%;
     padding: 13px 0px;
 }
@@ -499,37 +500,37 @@ margin: 14px 0px
 }
 
 .addr-inp {
-display: flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
 .addr-inp .comm {
-      /* width: 50%; */
-      width: calc(100% / 2 - 10px);
-padding: 10px 8px;
+    /* width: 50%; */
+    width: calc(100% / 2 - 10px);
+    padding: 10px 8px;
     /* margin: 3px 6px; */
 }
 
 
 .addr-inp .mes {
     /* width: 98%; */
-width: calc(100% / 1 - 10px);
+    width: calc(100% / 1 - 10px);
     padding: 10px 8px;
     /* margin: 5px 6px; */
-    
+
 }
 
 
-.send-btn{
-width: 100%;
+.send-btn {
+    width: 100%;
     /* border: 1px solid blue; */
     padding: 11px 0px;
     text-align: end;
 }
 
 .send-btn button {
-        margin: 0px 7px;
+    margin: 0px 7px;
     padding: 11px;
     background-color: black;
     color: white;
@@ -697,12 +698,13 @@ width: 100%;
     .footer-sub h5 {
         margin: 24px 5px;
         font-size: 15px;
-    }   
+    }
+
     .main-div {
-    padding: 50px 0px;
-    margin: 0px 17px;
-    border: 2px solid green;
-}
+        padding: 50px 0px;
+        margin: 0px 17px;
+        border: 2px solid green;
+    }
 }
 
 
@@ -734,12 +736,14 @@ width: 100%;
         width: 10px; DOUT
     } */
 
-    .logoheader {
-        display: flex;
-        border: 1px solid red;
-        flex-direction: column;
-    }
-
+.logoheader {
+    display: flex;
+    border: 2px solid black;
+    padding: 14px;
+    gap: 40px;
+    width: 100%;
+    position: fixed;
+}
     .logoheader li {
         font-size: 38px;
     }
@@ -748,7 +752,25 @@ width: 100%;
 
     .website-title {}
 
-          .about-sub {
+    .about-sub {
         flex-wrap: wrap;
+        border: 1px solid violet;
+    }
+
+    .about-main {
+        margin: 0px 15px;
+        padding: 52px 0px;
+        border: 2px solid green;
+    }
+
+    .about-sub p {
+        display: none;
+    }
+.about-sub .container {
+    width : 100%
+}
+       .about-img {
+        /* height: 283px; */
+        width: 100%;
     }
 }
