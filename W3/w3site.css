@@ -48,7 +48,7 @@ body h1 h2 h3 h4 h5 h6 {
     background-image: url("../ASSETS/parallax1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: center;
     height: 400px;
     width: 100%;
     display: flex;
@@ -444,11 +444,11 @@ background-color: #616161;
 .main-div {
     padding: 50px 0px;
     margin: 0px 210px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .main-feed {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     text-align: center;
 }
 
@@ -462,7 +462,7 @@ background-color: #616161;
 
 .main-addr {
     /* add  */
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin: 24px 0px;
     display: flex;
     gap: 20px;
@@ -472,7 +472,7 @@ background-color: #616161;
     margin: 12px 0px;
     width: 40%;
     height: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .sub-image img {
@@ -481,7 +481,7 @@ background-color: #616161;
 }
 
 .sub-address {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin: 10px 0px;
     width: 100%;
     padding: 13px 0px;
@@ -536,7 +536,7 @@ background-color: #616161;
     color: white;
 }
 
-.porto-back {}
+
 
 @media screen and (max-width : 992px) {
     .about-main {
@@ -556,12 +556,13 @@ background-color: #616161;
 
     .about-content p {
         font-size: 19px;
+        line-height: 25px;
     }
 
 
     .about-sub {
         gap: 43px;
-        margin: 0px 29px;
+        margin: 0px;
     }
 
     .about-img {
@@ -703,7 +704,7 @@ background-color: #616161;
     .main-div {
         padding: 50px 0px;
         margin: 0px 17px;
-        border: 2px solid green;
+        /* border: 2px solid green; */
     }
 }
 
@@ -735,18 +736,42 @@ background-color: #616161;
         height: 10px;
         width: 10px; DOUT
     } */
-
     .logoheader {
         display: flex;
         border: 2px solid black;
-        padding: 14px;
-        gap: 40px;
+        padding: 13px;
+        gap: 20px;
         width: 100%;
-        /* position: fixed; */
+        flex-direction: column;
+        background-color: white;
+        position: static;
+    }
+
+    .menubar-main {
+        position: relative;
+        left: 269px;
+    }
+
+    .menubar {
+        width: 48px;
+        height: 45px;
+        border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        gap: 3px;
+    }
+
+    .menubar .menu-item {
+        width: 15px;
+        border-radius: 1px;
+        border: 2px solid white;
     }
 
     .logoheader li {
-        font-size: 38px;
+        font-size: 17px;
     }
 
     .about-sub {
@@ -757,7 +782,7 @@ background-color: #616161;
     .about-main {
         margin: 0px 15px;
         padding: 52px 0px;
-        border: 2px solid green;
+        /* border: 2px solid green; */
     }
 
     .about-sub p {
@@ -789,5 +814,96 @@ background-color: #616161;
         padding: 9px;
         text-align: center;
         display: inline;
+    }
+
+
+    .about-content h5 {
+        font-style: italic;
+        color: #6c5f5f82;
+        margin: 18px 0px;
+        text-align: center;
+        font-family: "Lato", sans-serif;
+    }
+
+
+    .about-content p {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .container h4 {
+        text-align: center;
+        margin: 6px 0px;
+    }
+
+    .about-perc {
+        padding: 0px;
+        /* DOUT */
+    }
+
+    .porto-back .back-image {
+        background-position: center;
+    }
+
+    .images-main {
+        margin: 0px 15px;
+    }
+
+    .sent h5 {
+        font-style: italic;
+    }
+
+    .img-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 0px;
+        padding: 0px;
+        margin: 0px 20px;
+    }
+
+    .images-main {
+        margin: 0px;
+    }
+
+    .img-item img {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .cam-img {
+        height: 100%;
+        background-position: center;
+    }
+
+    .main-addr {
+        display: flex;
+        flex-wrap: wrap;
+        gap : 0px;
+    }
+
+    .sub-image {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .sub-address {
+        padding : 0px;
+    }
+
+    .addr-inp {
+        gap: 0px;
+    }
+
+    .addr-inp .comm {
+            width: calc(100% / 1);
+    }
+    .addr-inp .mes {
+            width: calc(100% / 1);
+            margin: 5px 0px;
+    }
+    .send-btn button {
+    margin: 0px;
     }
 }
