@@ -738,23 +738,23 @@ background-color: #616161;
     } */
     .logoheader {
         display: flex;
-        border: 2px solid black;
-        padding: 13px;
-        gap: 20px;
-        width: 100%;
-        flex-direction: column;
-        background-color: white;
-        position: static;
-    }
+            border: 2px solid black;
+            padding: 0px;
+            gap: 0px;
+            width: 100%;
+            flex-direction: column;
+            background-color: white;
+            position: fixed;
+        }
 
-    .menubar-main {
+    /* .menubar-main {
         position: relative;
         left: 269px;
-    }
+    } */
 
     .menubar {
-        width: 48px;
-        height: 45px;
+        width: 33px;
+        height: 28px;
         border: 2px solid green;
         display: flex;
         flex-direction: column;
@@ -765,13 +765,14 @@ background-color: #616161;
     }
 
     .menubar .menu-item {
-        width: 15px;
+                width: 10px;
         border-radius: 1px;
-        border: 2px solid white;
+        border: 1px solid white;
     }
 
     .logoheader li {
         font-size: 17px;
+        padding: 10px;
     }
 
     .about-sub {
@@ -880,7 +881,7 @@ background-color: #616161;
     .main-addr {
         display: flex;
         flex-wrap: wrap;
-        gap : 0px;
+        gap: 0px;
     }
 
     .sub-image {
@@ -889,7 +890,7 @@ background-color: #616161;
     }
 
     .sub-address {
-        padding : 0px;
+        padding: 0px;
     }
 
     .addr-inp {
@@ -897,13 +898,20 @@ background-color: #616161;
     }
 
     .addr-inp .comm {
-            width: calc(100% / 1);
+        width: calc(100% / 1);
     }
+
     .addr-inp .mes {
-            width: calc(100% / 1);
-            margin: 5px 0px;
+        width: calc(100% / 1);
+        margin: 5px 0px;
     }
+
     .send-btn button {
-    margin: 0px;
+        margin: 0px;
+    }
+
+    .home {
+        display: flex;
+        justify-content: space-between;
     }
 }
