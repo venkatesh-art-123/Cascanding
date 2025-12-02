@@ -3,13 +3,45 @@
 <head>
     <title> MAR PAD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link  rel="stylesheet" href="../../BOOTSTRAP/bootstrap.min.css">
+    <link rel="stylesheet" href="../../BOOTSTRAP/bootstrap.min.css">
+    <style>
+        * {
+            margin : 0px;
+            list-style-type: none;
+        }
+        .box {
+            min-width: 200px;
+            width: 50%;
+            border: 1px solid green;
+            background-color: red;
+            /* The box will be 50% of its parent, but never smaller than 200px */
+        }
+
+        .container1 {
+            margin-top : 24px;
+            /* max-width: 1000px; */
+            width: 100%;
+            border: 1px solid green;
+            background-color: rgb(38, 0, 255);
+            /* The container will be 90% of its parent, but never wider than 960px */
+        }
+        body{
+            max-width: 1000px;
+            width: 100%;
+            margin: auto;
+        }
+    </style>
 </head>
 
 <body>
     <div class="bg-danger text-light ms-5 me-5 mt-5 mb-5 mx-4 my-4"> Primary test</div>
     <div class="bg-danger text-light m-5">Test</div>
-
+    <div class="box">
+        THE BOX
+    </div>
+    <div class="container1">
+        THE CONTAINER
+    </div>
 </body>
 
 </html>
