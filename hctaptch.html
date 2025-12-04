@@ -1,0 +1,63 @@
+
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+                <title>hCaptcha Execute Example</title>
+                <!-- 1. Load hCaptcha SDK with explicit rendering -->
+                <script
+                    src="https://js.hcaptcha.com/1/api.js?onload=onloadHCaptcha&render=explicit"
+                    async defer>
+                </script>
+
+                <script>
+                    let widgetId = null;  // will hold the widget ID assigned by hCaptcha
+
+                    function onloadHCaptcha() {
+                        // 2. Once SDK is loaded, render invisible hCaptcha widget
+                        widgetId = hcaptcha.render('hcaptcha-container', {
+                            sitekey: 'ea80055c-b85e-49ba-b802-a7e2abd634ea',
+                            size: 'invisible',       // invisible mode
+                            callback: onSolve,
+                            'error-callback': onError,
+                            'expired-callback': onExpired
+                        });
+    }
+
+                    function onSolve(token, key) {
+                        // This function is called after successful solve
+                        // `token` is the h-captcha-response value
+                        console.log('hCaptcha solved:', { token, key });
+                    document.getElementById('demo-form').submit();  // or handle manually
+    }
+
+                    function onError(err) {
+                        console.error('hCaptcha error callback:', err);
+      // log to analytics, restart flow
+    }
+
+                    function onExpired() {
+                        console.warn('hCaptcha token expired');
+      // make sure to fetch a new token before user submits form
+    }
+
+                    function onManualStep(event) {
+                        event.preventDefault();
+                    // 3. Trigger the hCaptcha flow programmatically
+                    console.log("widgetId detc", widgetId)
+                    if (widgetId === null) {
+                        console.error('Widget not yet initialized');
+      } else {
+                        hcaptcha.execute(widgetId);
+      }
+    }
+                </script>
+        </head>
+        <body>
+            <form id="demo-form" action="/submit" method="POST">
+                <input type="text" name="name" placeholder="Name" required><br><br>
+                    <!-- 4. Invisible widget container -->
+                    <div id="hcaptcha-container"></div><br>
+                        <button id="submit-btn" onclick="onManualStep(event)">Submit</button>
+                    </form>
+                </body>
+                </html>
