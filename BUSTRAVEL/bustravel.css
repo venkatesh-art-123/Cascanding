@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+
+.head-select li {
+    font-weight: bolder;
+    padding: 16px;
+}
+
+.banner-img1 {
+  background-image: url(../BUSASSET/background6.jpg.jpeg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner-img2 {
+    background-image: url("../BUSASSET/bus.png");
+   width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
