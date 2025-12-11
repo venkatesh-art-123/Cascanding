@@ -1,0 +1,42 @@
+REACT
+VIRUTUAL DOM
+React utilies the virtual dom instead of directly manipulating the browser DOM.
+When state changes, React efficiency compare the virtual DOM with the pervious version and only updated the neccessary part of the actual DOM, leading to improve performance.
+React compares the previous Virtual DOM with the New Virtual DOM using a process called reconciliation.
+
+
+React updates the Virtual DOM instead of the real DOM because Virtual DOM is fast.
+When state changes, React creates a new Virtual DOM and compares it with the previous Virtual DOM.
+Then React updates only the changed elements in the real DOM, not the entire DOM tree.
+This makes the UI updates much faster.
+
+useState :
+1) React re-renders only when state changes.
+2) Because React only re-renders when state changes, NOT when normal variables change.
+
+
+useEffect :
+1) React initially re-renders the page after only once call useEffect. After that re-renders many time the useEffect doesn't call.
+2) If you want to call the useEffect when you need achieve through in dependecies.
+
+chatGPT :
+In React, useEffect runs only once when the page first loads. After that, even if the page re-renders, useEffect won’t run again unless something in the dependency array changes.
+
+If you want useEffect to run again, just add the values you want to track inside the dependency array.
+
+Memory Leak :
+useEffect(() => {
+// After clean up API call 
+//clean up leakages
+return (() => setName("")
+}
+, [])
+
+
+What is useRef ?.
+  useEffect(() => {
+        console.log("naaaaaaaaaa", name);
+        inputRef.current = name;
+    }, [name]);
+
+name is a state value, when we updated the state we see the previous value , because its call after re-render this page so before the re-rendered value store in the input.current. But actually its store the current value.
