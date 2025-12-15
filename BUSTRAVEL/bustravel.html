@@ -4,14 +4,18 @@
     <title> Busstravel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../BOOTSTRAP/bootstrap.min.css">
+    <!-- Add this link in your <head> section -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="./bustravel.css">
+    <link rel="stylesheet" href="./buscommon.css">
 </head>
 
 <body>
-    <div class="header-main border border-success">
-        <div class="header border border-danger m-2 d-flex justify-content-around">
+    <div class="header-main">
+        <div class="header m-2 d-flex justify-content-around">
             <div class="head-bus p-3 fw-b">
-                <span class="h5"> Bus Traveller</span>
+                <span class="h5 cont-descr"> Bus Traveller</span>
             </div>
             <div class="head-select">
                 <ul class="d-flex">
@@ -23,27 +27,161 @@
                 </ul>
             </div>
             <div class="book-btn p-3">
-                <button class="bg-info border rounded-pill text-light px-3 py-2">BOOK TRIP</button>
+                <button class="head-btn border rounded-pill text-light px-3 py-2">BOOK TRIP</button>
 
             </div>
         </div>
 
-        <div class="banner-main border border-success px-3">
-            <div class="banner-img1 d-flex border rounded-5">
-                <div class="banner-title">
-                    <span class="h6"> BUS YOUR TRAVEL JOURNEY</span>
-                    <div class="cont display-3 fw-bold"> Where Every <br>Bus Ride Feels <br>Magical!</div>
-                    <div class="booktrip-btn p-3">
-                        <button class="bg-info border rounded-pill text-light px-3 py-2"> Book A Trip Now</button>
+        <div class="banner-main px-3">
+            <div class="banner-img1 border rounded-5">
+                <div class="banner-title d-flex">
+                    <div class="banner-ent d-flex flex-column gap-4 justify-content-center">
+                        <div class="banner-head">
+                            <span class="h6 fw-bold">BUS YOUR TRAVEL JOURNEY</span>
+                        </div>
+                        <div class="banner-descr">
+                            <div class="display-3 fw-bold"> Where Every <br> Bus Ride Feels <br> Magical!</div>
+                        </div>
+                        <div class="busbook">
+                            <button class="busbook-btn border rounded-pill">Book A Trip Now</button>
+                        </div>
+                    </div>
+                    <div class="bus-img">
+                        <!-- <div class="banner-img2 border border-danger"></div> -->
+                        <img src="../BUSASSET/bus.png">
                     </div>
                 </div>
-                <div class="banner-img2">
-
-                </div>
             </div>
+
             <!-- <div class="banner-img2"></div> -->
+            <!-- <img src="../BUSASSET/bus.png"> -->
 
         </div>
+    </div>
+
+    <div class="pop-main border border-success">
+        <div class="pop-sub-main">
+            <div class="pop-desc">
+                <h2 class="pop-head">Popular Destination</h2>
+                <h6 class="descrip-para">Discover the Most Loved Destination Around the Globe</h6>
+            </div>
+            <div class="pop-img-main d-flex gap-4">
+                <div class="flut-img1">
+                    <img src="../BUSASSET/card.jpg.jpeg" class="border rounded-4" />
+                    <div class="flut-desc ps-2 mt-3">
+                        <p class="cont-descr"> Scared Calm at Badrinath <br> Temple <button
+                                class="flut-btn border rounded-pill px-2 text-end">
+                                * 4.7</button></p>
+                    </div>
+                    <div>
+                        <p class="descrip-para ps-2"> Badrinath, Uttarkand, India </p>
+                    </div>
+                </div>
+                <div class="flut-img1">
+                    <img src="../BUSASSET/card2.jpg.jpeg" class="border rounded-4" />
+                    <div class="flut-desc ps-2 mt-3">
+                        <p class="cont-descr">Divine Majesty at Jagannath <br> Temple <button
+                                class="flut-btn border rounded-pill px-2 text-end">
+                                * 4.7</button></p>
+                    </div>
+                    <div>
+                        <p class="descrip-para ps-2"> Puri, Odisha, India </p>
+                    </div>
+
+                </div>
+                <div class="flut-img1">
+                    <img src="../BUSASSET/card3.webp" class="border rounded-4" />
+                    <div class="flut-desc ps-2 mt-3">
+                        <p class="cont-descr">Spiritual Serenity at Neem Karoli <br> Temple <button
+                                class="flut-btn border rounded-pill px-2 text-end">
+                                * 4.7</button></p>
+                    </div>
+                    <div>
+                        <p class="descrip-para ps-2"> Dehradun, India </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bus-plan">
+        <div class="pop-sub-main border border-danger">
+            <div class="bus-tra">
+                <h2 class="pop-head text-center">Bus Travel, the Easy Way!</h2>
+                <h6 class="descrip-para text-center">Effortless planning for Your Next Adventure</h6>
+            </div>
+            <div class="bus-book">
+                <div class="bus-book-card my-4 d-flex gap-3">
+                    <div class="container border border-success">
+                        <div class="cards-trigger border border-light my-5">
+                            <div class="card-tit m-4">
+                                <div class="fa-save my-4"></div>
+                                <h6 class="cont-descr" style="margin-top : 80px">Seamless Booking Process</h6>
+                            </div>
+                        </div>
+                        <div class="cards rounded-bottom-4 border border-info">
+                            <div class="card-ent px-4">
+                                <div class="fa-save my-4"></div>
+                                <h6 class="cont-descr my-3 text-white"> Seat Booking, one Click Away</h6>
+                                <p class="descrip-para text-black">From booking tickets to tracking your bus <br>
+                                    in real-time, everything is just
+                                    a click away. <br>No more long queues or last-minute <br> confusion — plan, book,
+                                    and
+                                    board
+                                    with <br>
+                                    complete ease. Your journey, simplified. </p>
+                                <!-- <h6 class="cont-descr"> Seamless Booking Process</h6> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container border border-success">
+                        <div class="cards-trigger border border-light my-5">
+                            <div class="card-tit m-4">
+                                <div class="fa-save my-4"></div>
+                                <h6 class="cont-descr" style="margin-top : 80px">Tailored Itineraries</h6>
+                            </div>
+                        </div>
+                        <div class="cards rounded-bottom-4 border border-info">
+                            <div class="card-ent px-4">
+                                <div class="fa-save my-4"></div>
+                                <h6 class="cont-descr my-3 text-white"> Customized Plans Just for You</h6>
+                                <p class="descrip-para text-black">Everyone travels differently — that’s why <br>
+                                    we create plans just for you. From <br>
+                                    preferred timings to budget-friendly <br>
+                                    options and seat choices, enjoy a trip <br>
+                                    designed around your lifestyle.</p>
+                                <!-- <h6 class="cont-descr"> Tailored Itineraries</h6> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container border border-success">
+                        <div class="cards-trigger border border-light my-5">
+                            <div class="card-tit m-4">
+                                <div class="fa-save my-4"></div>
+                                <h6 class="cont-descr" style="margin-top : 80px">Expert Local Insights</h6>
+                            </div>
+                        </div>
+                        <div class="cards rounded-bottom-4 border border-info">
+                            <div class="card-ent px-4">
+                                <div class="fa-save my-4"></div>
+                                <h6 class="cont-descr my-3 text-white"> Insider Tips and <br> Recommendations</h6>
+                                <p class="descrip-para text-black">From the best boarding points to local <br> travel
+                                    hacks,
+                                    our insights are powered by <br>
+                                    real people who know the roads. It’s local <br>
+                                    knowledge, delivered straight to your <br>screen. </p>
+                                <!-- <h6 class="cont-descr"> Expert Local Insights</h6> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
 </body>
 

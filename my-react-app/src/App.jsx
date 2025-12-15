@@ -9,6 +9,7 @@ import Referrence from "./useRef/ref";
 import Memo from "./useMemo/memo";
 import { UseCallBack } from './useCallBack/callBack';
 import Context from './useContext/context';
+import Reducer from './useReducer/reducer';
 
 export const ThemeChanges = createContext();
 function App() {
@@ -27,12 +28,14 @@ function App() {
       {/* <Referrence /> useRef */}
       {/* <Memo /> useMemo */}
       {/* <UseCallBack /> useCallback */}
-      <ThemeChanges.Provider value={{
+      {/* <Context theme={theme} /> props via */}
+      {/* <ThemeChanges.Provider value={{
         theme
       }}>
-        {/* <Context theme={theme} /> props via */}
         <Context theme={theme} />
-      </ThemeChanges.Provider>
+      </ThemeChanges.Provider> useContext */}
+      <Reducer/>
+
 
 
     </>

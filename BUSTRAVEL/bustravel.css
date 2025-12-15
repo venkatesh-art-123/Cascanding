@@ -14,6 +14,11 @@ body {
     padding: 16px;
 }
 
+.head-btn {
+    background-color: #2887ff;
+    color: white;
+}
+
 .banner-img1 {
     background-image: url(../BUSASSET/background6.jpg.jpeg);
     width: 100%;
@@ -34,11 +39,93 @@ body {
 
 .banner-title {
     /* border: 1px solid #7aff00; */
-    width: 50%;
-    padding: 100px;
+    width: 100%;
+    /* padding: 25%; */
+    /* padding-top: 0%; */
+    height: 100%;
 }
 
 .cont {
     width: 100%;
     /* border: 2px solid red; */
+}
+
+.banner-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border: 1px solid green;
+}
+
+
+.banner-ent {
+    margin-left: 10%;
+}
+
+.bus-img {
+    width: 40%;
+}
+
+.bus-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.busbook-btn {
+    padding: 15px 25px;
+    background-color: #2887ff;
+    color: white;
+}
+
+
+
+.pop-par {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.flut-img1 {
+    width: 30%;
+    /* height: 25%; */
+}
+
+.flut-img1 img {
+    width: 100%;
+}
+
+
+.pop-img-main {
+    margin: 75px 0px;
+}
+
+
+
+.flut-desc .flut-btn {
+    background: blue;
+    color: white;
+}
+
+
+.cards-trigger {
+    background-color : #f3f4f6;
+        border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+
+.cards {
+    background-color: #2887ff;
+    display : none;
+}
+
+.container {
+    width: 30%;
+}
+
+.container:hover .cards {
+    display : block;
+}
+
+.container:hover .cards-trigger {
+    display : none;
 }

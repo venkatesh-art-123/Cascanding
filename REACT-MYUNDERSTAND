@@ -1,4 +1,7 @@
 REACT
+React is an open source js library is used to build user interface(UI) especially single page application.
+React is fast , interactive web page using reusable component. 
+
 VIRUTUAL DOM
 React utilies the virtual dom instead of directly manipulating the browser DOM.
 When state changes, React efficiency compare the virtual DOM with the pervious version and only updated the neccessary part of the actual DOM, leading to improve performance.
@@ -16,7 +19,7 @@ useState :
 
 
 useEffect :
-1) React initially re-renders the page after only once call useEffect. After that re-renders many time the useEffect doesn't call.
+1) React initially re-renders the page after only once call useEffect.After that doesnt call unless the dependecies through call the useEffect.
 2) If you want to call the useEffect when you need achieve through in dependecies.
 
 chatGPT :
@@ -40,3 +43,10 @@ What is useRef ?.
     }, [name]);
 
 name is a state value, when we updated the state we see the previous value , because its call after re-render this page so before the re-rendered value store in the input.current. But actually its store the current value.
+
+useContext :
+useContext is a react Hook, allow functional Component read to data from a React Context.
+Its purpose to avoided the props drilling.  Its provided global across part of the component tree.
+Disadvantage :
+The useContext is that whatever the context value change, all component consuming that context will re-render, even if they are using only a small part of the data. THis can lead to unnecessary re-renders and performance
+issue , espically with frequently changing data.

@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.pop-sub-main {
+    padding: 5% 10%;
+}
+
+.pop-head {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+.descrip-para {
+    color: grey;
+    font-size: 18px;
+}
+
+.cont-descr {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.head-select li {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.fa-save {
+   font-size: 36px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid red;
+}
+
