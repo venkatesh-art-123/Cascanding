@@ -9,7 +9,15 @@ import Referrence from "./useRef/ref";
 import Memo from "./useMemo/memo";
 import { UseCallBack } from './useCallBack/callBack';
 import Context from './useContext/context';
-import Reducer from './useReducer/reducer';
+import Home from "./Routes/home";
+import About from "./Routes/about";
+import Contact from "./Routes/contact";
+
+
+
+import { BrowserRouter, Routes, Router, Route } from 'react-router-dom';
+import Navbar from './Routes/router';
+import Error from './Routes/error';
 
 export const ThemeChanges = createContext();
 function App() {
@@ -21,22 +29,28 @@ function App() {
 
   return (
     <> <h1> Lets begin in App</h1>
-      <button onClick={() => setTheme(!theme)}> Update Theme </button>
+      {/* <button onClick={() => setTheme(!theme)}> Update Theme </button> */}
       {/* <Count /> useState */}
       {/* <User user={user} email={email}/>  Props , export & import*/}
       {/* <Effect /> useEffect */}
       {/* <Referrence /> useRef */}
       {/* <Memo /> useMemo */}
       {/* <UseCallBack /> useCallback */}
-      {/* <Context theme={theme} /> props via */}
       {/* <ThemeChanges.Provider value={{
         theme
       }}>
         <Context theme={theme} />
-      </ThemeChanges.Provider> useContext */}
-      <Reducer/>
-
-
+      </ThemeChanges.Provider> */}
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/home" element={<Home />}> </Route>
+          <Route path="/home/:username" element={<Home />}> </Route>
+          <Route path="/about" element={<About />}> </Route>
+          <Route path="/contact" element={<Contact />}> </Route>
+          <Route path="*" element={<Error />}></Route>
+        </Routes>
+      </BrowserRouter>
 
     </>
   )

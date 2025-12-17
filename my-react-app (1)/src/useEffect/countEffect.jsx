@@ -7,11 +7,12 @@ export function CountEffect() {
     useEffect(() => {
         console.log("call after rendered the fullpage")
         setValue(200)
+
+        return () => {}
     }, []);
 
     useEffect(() => {
         setInterval(() => {
-
         }, 1000);
         return () => clearInterval();
     }, [])
