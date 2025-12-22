@@ -32,9 +32,30 @@
 
 
 .fa-save {
-   font-size: 36px;
+    font-size: 36px;
     width: 30px;
     height: 30px;
     border: 2px solid red;
+    /* margin: 21px; */
 }
 
+.card-size {
+    width: 33%;
+    height: 100%;
+    /* border : 1px solid blue; */
+}
+
+.card {
+    border-radius: 0px 12px 0px 12px;
+}
+
+.card-data {
+    /* border: 2px solid red; */
+    padding: 26px;
+}
+
+
+.descrip-cardpara {
+    font-size: 16px;
+    color: black;
+}

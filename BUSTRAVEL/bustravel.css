@@ -107,25 +107,72 @@ body {
 
 
 .cards-trigger {
-    background-color : #f3f4f6;
-        border-bottom-left-radius: 16px;
+    background-color: #f3f4f6;
+    border-bottom-left-radius: 16px;
     border-top-right-radius: 16px;
 }
 
 
 .cards {
     background-color: #2887ff;
-    display : none;
+    display: none;
 }
 
-.container {
+/* .container {
     width: 30%;
 }
 
 .container:hover .cards {
-    display : block;
+    display: block;
 }
 
 .container:hover .cards-trigger {
-    display : none;
+    display: none;
+} */
+
+.bus-cards {
+    /* padding-top: 77px; */
+    height: 100%;
+}
+
+.bus-box {
+    border: 2px solid red;
+    height: 246px;
+    margin-top: 30px;
+}
+
+
+.card-title {
+    /* margin: 45px 13px 20px 17px; */
+    margin-top: 49px;
+}
+
+.card-trigger {
+    display: none;
+}
+
+.cards-trigger {
+    border: 2px solid red;
+}
+
+.cont-1:hover .card-data {
+    /* display: none; */
+}
+
+.cont-1:hover .cards-trigger {
+    display: block;
+    /* height: 100%; */
+}
+
+
+.card-tri {
+    border: 1px solid yellow;
+    padding: 21px;
+    height: 100%;
+    background-color: #2887ff;
+}
+
+.cont-spa {
+    margin-top: 20px;
+    margin-bottom: 13px;
 }
