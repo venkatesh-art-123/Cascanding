@@ -176,3 +176,36 @@ body {
     margin-top: 20px;
     margin-bottom: 13px;
 }
+
+/* ---------------- */
+/* Book a bus  */
+.busbook-img {
+    height: 552px;
+    width: 85%;
+}
+
+
+.busbook-img img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.bus-now {
+    background-image: url(../BUSASSET/showcase2.jpeg);
+    height: 10%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.bus-now img {
+    height: 100%;
+    width: 100%;
+}
+
+.bus-now h5 {
+        padding: 10px;
+}
