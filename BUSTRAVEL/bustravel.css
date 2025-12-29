@@ -151,15 +151,11 @@ body {
     display: none;
 }
 
-.cards-trigger {
-    border: 2px solid red;
-}
-
 .cont-1:hover .card-data {
-    /* display: none; */
+    display: none;
 }
 
-.cont-1:hover .cards-trigger {
+.cont-1:hover .card-trigger {
     display: block;
     /* height: 100%; */
 }
