@@ -10,9 +10,9 @@ function Landing() {
             <div className="main-furni">
                 <Header />
                 <div className="d-flex">
-                    <div className="border border-danger banner-cont">
-                        <div className="banner-tit display-3 fw-bold">
-                            <h1>Modern Interior Design <br /> Studio</h1>
+                    <div className=" banner-cont">
+                        <div className="banner-tit">
+                            <h1 className="display-4 fw-bold">Modern Interior Design Studio</h1>
                         </div>
                         <div>
                             <p className="ban-p">
@@ -25,9 +25,11 @@ function Landing() {
                         </div>
 
                     </div>
-                    <div className="border border-info back-dot">
-                        <div className="sofaImage">
-                            {/* <img src={Images.sofaImage} /> */}
+                    <div className="banner-cont-img">
+                        <div className="back-dot">
+                            <div className="sofaImage">
+                                <img className="" src={Images.sofaImage} />
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -6,12 +6,12 @@ function Header() {
     console.log("Header Images", Images.profileIcon)
     return (
         <>
-            <div className="header-main d-flex justify-content-around border border-danger">
-                <div className="header-title head-pad border border-warning">
+            <div className="header-main d-flex justify-content-around">
+                <div className="header-title head-pad">
                     <h1>Furni.</h1>
                 </div>
-                <div className="header-bar border border-success d-flex justify-content-between">
-                    <div className="menu-bar border border-info">
+                <div className="header-bar d-flex justify-content-between">
+                    <div className="menu-bar">
                         <ul className="head-pad-menu d-flex justify-content-between">
                             <li>Home</li>
                             <li>Shop</li>
@@ -21,7 +21,7 @@ function Header() {
                             <li>Contact us</li>
                         </ul>
                     </div>
-                    <div className="head-icon border border-warning d-flex justify-content-between">
+                    <div className="head-icon d-flex justify-content-between">
                         <button className="header-btn pt-2">
                             <img src={Images.profileIcon} />
                         </button>
