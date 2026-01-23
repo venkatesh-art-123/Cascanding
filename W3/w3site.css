@@ -48,7 +48,7 @@ body h1 h2 h3 h4 h5 h6 {
     background-image: url("../ASSETS/parallax1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: right;
     height: 400px;
     width: 100%;
     display: flex;
