@@ -9,20 +9,30 @@ body {
     list-style-type: none;
 }
 
-.menu-bar {
-    width: 75%;   
-}
-
-img {
-    /* background-color: red; */
-}
 
 .header-main {
         height: 73px;
 }
 
+.head-pad {
+    padding: 13px;
+    color : white;
+}
+
 .header-bar {
     width: 50%;
+}
+
+.menu-bar {
+    width: 75%;   
+}
+
+.head-pad-menu {
+        padding: 25px;
+}
+
+.head-icon {
+    width: 13%;
 }
 
 .header-btn {
@@ -32,19 +42,6 @@ img {
 img {
     width: 100%;
     height: 100%;
-}
-
-.head-icon {
-    width: 13%;
-}
-
-.head-pad {
-    padding: 13px;
-    color : white;
-}
-
-.head-pad-menu {
-        padding: 25px;
 }
 
 
