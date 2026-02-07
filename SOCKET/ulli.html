@@ -1,0 +1,69 @@
+<!-- <html>
+<head></head>
+<body>
+    <form id="message-form">
+        <input type="text" id="message-input" placeholder="Enter message" autocomplete="off">
+        <button type="submit">Send</button>
+    </form>
+    <ul id="messages"></ul>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        socket.on('connect', () => {
+            console.log('Connected to server');
+        });
+        socket.on('newMessage', (message) => {
+            const li = document.createElement('li');
+            li.textContent = `${message.from}: ${message.text}`;
+            document.getElementById('messages').appendChild(li);
+        });
+        document.getElementById('message-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const message = document.getElementById('message-input').value;
+            socket.emit('createMessage', {
+                from: 'User',
+                text: message,
+                createdAt: Date.now()
+            });
+            document.getElementById('message-input').value = '';
+        });
+        socket.on('disconnect', () => {
+            console.log('Disconnected from server');
+        });
+    </script>
+</body>
+</html> -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chat App</title>
+</head>
+
+<body>
+    <form id="message-form">
+        <input type="text" id="new-message" />
+        <button id="submit">Submit</button>
+    </form>
+    <ul id="messages"> </ul>
+    <div id="list-container"> </div>
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <script>
+        const container = document.getElementById('list-container');
+        const ul = document.createElement('ul');
+        ul.setAttribute('id', 'list');
+                console.log("container data", container, ul)
+        container.appendChild(ul);
+        let arr = ['apple', 'orange', 'pineapple'];
+        for (let i = 0; i < arr.length; i++) {
+            let items = arr[i];
+            const li = document.createElement('li');
+            li.textContent = items;
+            ul.appendChild(li)
+        }
+        // document.getElementById('messages').create
+    </script>
+</body>
+
+</html>
